@@ -1,0 +1,6 @@
+def check(str):
+	for i in range 26:
+		newStr = ""
+		for i in range(length(str)):
+			join(newStr,str(ord(str[i])+i))
+		print newStr
