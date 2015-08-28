@@ -25,17 +25,17 @@ class Solution(object):
                     break
             # left and right
             while right - left > 1:
-                print right, left
+                # print right, left
                 if value >= array[(right+left)/2]:
                     right = (right+left) /2 
                 else:
                     left = (right+left) / 2
             if array[right] > value:
                 left = right
-            print left, right,value
-            print array[:left+1], [value], array[left+1:-1]
+            # print left, right,value
+            # print array[:left+1], [value], array[left+1:-1]
             array = array[:left+1]+ [value] + array[left+1:-1]
-            print array, value
+            # print array, value
             
             return array
         
